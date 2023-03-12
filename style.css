@@ -1,0 +1,13 @@
+body {
+    width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#profilepic {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    max-width: -webkit-fill-available;
+}
