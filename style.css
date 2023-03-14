@@ -3,10 +3,15 @@ body {
     width: 50%;
     margin: auto;
     margin-top: 1rem;
+    font-family: "Lora", "Minion Pro", Palatino, Georgia, serif;
 }
 
-#header h1 {
-    text-align: center;
+h2{
+    margin-bottom: 0.3rem;
+}
+
+h3 {
+    margin-top: 0rem;
 }
 
 span {
@@ -70,6 +75,7 @@ a:hover path {
     border-right: 0px;
     border-style: solid;
     border-color: black;
+    margin-top: 3rem;
 }
 
 #profilepic {
@@ -79,7 +85,11 @@ a:hover path {
     max-width: -webkit-fill-available;
 }
 
-#titleandlinks {
+#header h1 {
+    text-align: center;
+}
+
+.titleandlinks {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -88,13 +98,17 @@ a:hover path {
 
 
 
-@media(max-width: 500px) {
+@media(max-width: 510px) {
     h1{
         text-align: center;
     }
 
-    #titleandlinks {
+    .titleandlinks {
         justify-content: center;
+    }
+
+    .titleandlinks h1 {
+        margin-bottom: 0px !important;
     }
 }
 
