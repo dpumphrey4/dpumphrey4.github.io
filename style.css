@@ -6,7 +6,7 @@ body {
     font-family: "Lora", "Minion Pro", Palatino, Georgia, serif;
 }
 
-h2{
+h2 {
     margin-bottom: 0.3rem;
 }
 
@@ -23,14 +23,15 @@ svg {
     padding-left: 5px;
 }
 
-ul, li {
+ul,
+li {
     list-style-type: none;
     list-style-position: inside;
     margin: 0;
     padding: 0;
 }
 
-.contact-button{
+.contact-button {
     border-radius: 3px;
     background-color: #efefef;
     text-decoration: none;
@@ -78,6 +79,39 @@ a:hover path {
     margin-top: 3rem;
 }
 
+.titleandlinks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-row-text {
+    width: 70%
+}
+
+.info-row-picture {
+    display: inline-block;
+    margin-top: 19.92px;
+    margin-left: 40px;
+    margin-right: 50px;
+    max-width: 20%;
+}
+
+.info-row-picture img {
+    border-radius: 25px;
+    border: 3px solid black;
+    padding: 20px;
+    max-width: 100%;
+}
+
+
+
 #profilepic {
     border-radius: 50%;
     display: block;
@@ -89,17 +123,37 @@ a:hover path {
     text-align: center;
 }
 
-.titleandlinks {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
 
 
 @media(max-width: 510px) {
-    h1{
+    .titleandlinks h1 {
+        margin-bottom: 0px !important;
+    }
+}
+
+@media(max-width: 600px) {
+
+    h2,
+    h3,
+    p {
+        text-align: center;
+    }
+
+    .info-row-text {
+        width: 100%;
+    }
+
+    .info-row-picture {
+        display: block;
+        margin: auto;
+        max-width: 75%;
+    }
+
+    .info-row-picture img {
+        max-width: -webkit-fill-available;
+    }
+
+    h1 {
         text-align: center;
     }
 
@@ -107,11 +161,10 @@ a:hover path {
         justify-content: center;
     }
 
-    .titleandlinks h1 {
-        margin-bottom: 0px !important;
+    .info-row {
+        flex-wrap: wrap;
     }
 }
-
 
 @media(max-width: 1000px) {
     body {
