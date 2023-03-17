@@ -171,3 +171,27 @@ a:hover path {
         width: 80%;
     }
 }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1e1e1e;
+        color: #d4d4d4;
+    }
+
+    a:hover path {
+        fill: white;
+    }
+
+    a {
+        color: #f47c37;
+    }
+
+    .section-header {
+        border-color: white;
+    }
+
+    .info-row-picture img {
+        border-color: white;
+    }
+}
