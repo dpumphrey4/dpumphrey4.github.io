@@ -31,6 +31,10 @@ li {
     padding: 0;
 }
 
+.bulleted-list li {
+    list-style-type: disc;
+}
+
 .contact-button {
     border-radius: 3px;
     background-color: #efefef;
@@ -110,6 +114,12 @@ a:hover path {
     max-width: 100%;
 }
 
+.info-row-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
 
 
 #profilepic {
@@ -131,7 +141,7 @@ a:hover path {
     }
 }
 
-@media(max-width: 600px) {
+@media(max-width: 800px) {
 
     h2,
     h3,
@@ -150,7 +160,16 @@ a:hover path {
     }
 
     .info-row-picture img {
-        max-width: -webkit-fill-available;
+        height: 200px;
+    }
+
+    .info-row-video {
+        margin: auto;
+    }
+
+    .info-row-video iframe {
+        height: 225px;
+        width: 350px;
     }
 
     h1 {
@@ -166,7 +185,7 @@ a:hover path {
     }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1200px) {
     body {
         width: 80%;
     }
@@ -193,5 +212,10 @@ a:hover path {
 
     .info-row-picture img {
         border-color: white;
+    }
+
+    .info-row-video iframe {
+        height: 225px;
+        width: 350px;
     }
 }
